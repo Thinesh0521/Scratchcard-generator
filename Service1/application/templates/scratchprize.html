@@ -1,0 +1,11 @@
+{% extends "design.html" %}
+
+{% block body_content %}
+<div class="container-fluid">
+	<h1> Your number-letter combination is {{ code }}</h1>	
+	{{ winning }}<br><br>
+    
+<a href="{{ url_for('index') }}">Lets Try again!</a>
+</div>
+
+{% endblock body_content %}
