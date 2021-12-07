@@ -3,17 +3,18 @@ from flask import render_template, request, Response, redirect, url_for
 import requests
 from application.models import prizedb
 
-
+#Index page showing the generated code which includes numbers and letters
 @app.route('/', methods=['GET'])
 def home():
-    four_numbers = requests.get('http://service2:5001/four_numbers')
-    four_letters = requests.get('http://service3:5002/four_letters')
+    four_numbers = requests.get('http://Service2:5001/four_numbers')
+    four_letters = requests.get('http://Service3:5002/four_letters')
     code = str(four_numbers.text)+str(four_letters.text)
     return render_template('index.html',title='home', code=code)
 
+# The route that generates reward based on the generated numbers and letters
 @app.route('/scratchprize/<code>', methods=['GET', 'POST'])
 def prize(code):
-    winning = requests.post('http://service4:5003/prize1', data=code)
+    winning = requests.post('http://Service4:5003/prize1', data=code)
     prizes = prizedb(code=code, reward=winning.text)    
     db.session.add(prizes)
     db.session.commit()
@@ -21,7 +22,7 @@ def prize(code):
 
 #@app.route('/scratchprize/<code>', methods=['GET', 'POST'])
 #def prize(code):
-#    winning = requests.post('http://service4:5003/prize2', data=code)
+#    winning = requests.post('http://Service4:5003/prize2', data=code)
 #    prizes = prizedb(code=code, reward=winning.text)    
 #    db.session.add(prizes)
 #    db.session.commit()
