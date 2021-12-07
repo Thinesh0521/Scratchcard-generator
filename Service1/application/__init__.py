@@ -4,6 +4,6 @@ from os import getenv
 
 app = Flask(__name__)
 pw = getenv('MYSQL_ROOT_PASSWORD')
-app.config['SQLALCHEMY_DATABASE_URI']='mysql+pymysql://root:' + pw + '@database:3306/database'
+app.config['SQLALCHEMY_DATABASE_URI']='mysql+pymysql://root:' + pw + ''
 db = SQLAlchemy(app)
 from application import routes

@@ -25,4 +25,4 @@ def prize(code):
 #    prizes = prizedb(code=code, reward=winning.text)    
 #    db.session.add(prizes)
 #    db.session.commit()
-#    return render_template('prize.html', title='prize', code=code, winning=winning.text)  
+#    return render_template('scratchprize.html', title='prize', code=code, winning=winning.text)  
