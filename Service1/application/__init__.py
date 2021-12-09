@@ -2,8 +2,8 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from os import getenv
 
+# Configuration for the database
 app = Flask(__name__)
-pw = getenv('MYSQL_ROOT_PASSWORD')
-app.config['SQLALCHEMY_DATABASE_URI']='mysql+pymysql://root:' + pw + ''
+app.config['SQLALCHEMY_DATABASE_URI']='sqllite:/// prize.db '
 db = SQLAlchemy(app)
 from application import routes
