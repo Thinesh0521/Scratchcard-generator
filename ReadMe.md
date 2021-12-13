@@ -201,7 +201,7 @@ NGINX is a open source software for web serving, reverse proxying, caching and l
 
 On GCP, I had to create a NGINX VM on GCP and create a nginx.conf. In this VM, I also had to install docker and use the docker run as a NGINX container. NGINX for this project acts as a load balancer and evenly distributes traffic between the manager and worker node.
 
-![NGINX](project-image-url)
+![Nginx](https://user-images.githubusercontent.com/93920209/145829862-9d31156c-1bbe-43f3-ac9a-1ff2789da3af.png)
 
 
 
