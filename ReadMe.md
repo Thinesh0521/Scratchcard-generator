@@ -45,14 +45,14 @@ The objective of the project was: "to create a service-orientated architecture f
 This project is primarily concerned with deploying the application.
 
 For this project, I should have:
--Kanban Board: Jira 
--Version Control: GIT & GITHUB
--CI Server: Jenkins
--Configuration Management: Ansible
--Cloud Server: Google Cloud Platform (GCP) Virtual Machines
--Containerisation: Docker
--Orchestration Tool: Docker Swarm
--Reverse Proxy: NGINX
+- Kanban Board: Jira 
+- Version Control: GIT & GITHUB
+- CI Server: Jenkins
+- Configuration Management: Ansible
+- Cloud Server: Google Cloud Platform (GCP) Virtual Machines
+- Containerisation: Docker
+- Orchestration Tool: Docker Swarm
+- Reverse Proxy: NGINX
 
 [Back To The Top](#scratchcard-generator)
 
@@ -74,9 +74,9 @@ I have decided to make a scratchcard prize generator web application. The applic
 Once the web application was made and tested in a virual machine , I added a Dockerfile into each of the services to containerise them and made a docker-compose.yaml. Then I made ansible files that involves Inventory, playbook.yaml and roles/tasks. These files can help install docker on the swarm nodes and then set up a docker swarm. After setting these up, I then created a Jenkinsfile with scripts so that jenkin can use these requirements to make a pipeline.
 
 I need 3 new Virtual Machines in Google Cloud Platform and these are:
--jenkins
--manager
--worker
+- jenkins
+- manager
+- worker
 
 Firstly, I started off by installing Jenkins on the "jenkins" Virtual Machine. As soon as this was complete and installed, I gave jenkins sudo permissions by using the command: "sudo visudo" and as the jenkin user, I have installed docker and docker-compose. I also needed to generate keys as jenkin user by using: "ssh-keygen -t rsa". 
 
