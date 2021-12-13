@@ -85,30 +85,30 @@ On the "jenkins" Virtual Machine, I placed the generated public key from jenkin 
 ---
 ## ERD
 
-![ERD](C:\Users\Thinesh\Scratch card project\Documentations\erd.png)
+![erd](https://user-images.githubusercontent.com/93920209/145828621-4a536f4e-af96-4a72-9540-25f637a305e2.png)
 
 
 ---
 ## Jira
 
-![Project Image](project-image-url)
+![Jira](project-image-url)
 
 ---
 ## Risk Assessment
 
 
-![Project Image](project-image-url)
+![Risk Assessment](https://user-images.githubusercontent.com/93920209/145828845-983b442b-2d40-4923-a530-262b4be41d94.png)
 
 ---
 ## Service Infrastructure
 
-![Project Image](project-image-url)
+![Service Infrastructure](https://user-images.githubusercontent.com/93920209/145828764-5a7e4552-1aeb-47f8-9f35-b31a6c8e54ce.png)
 
 
 ---
 ## CI Pipeline
 
-![Project Image](project-image-url)
+![CI Pipeline](https://user-images.githubusercontent.com/93920209/145828879-4af6eb86-3c84-46c9-94ad-159041c2e648.png)
 
 
 ---
@@ -141,7 +141,7 @@ After setting previous stages up, I had to make a Jenkins pipeline in order for 
 
 For this project, I had to execute scripts in my steps as it is easy to implement. Here is a picture of my jenkins pipeline:
 
-![Project Image](project-image-url)
+![Jenkins Pipeline](project-image-url)
 
 
 
@@ -152,7 +152,7 @@ Testing is the first stage of a deployment and I had to pytest each service by u
 
 Here is the picture of the pytest.
 
-![Project Image](project-image-url)
+![Testing](project-image-url)
 
 
 
@@ -174,7 +174,7 @@ After assigning which hosts will have what roles, I had to make a role directory
 #### main.yaml
 In this file, I had to specify the tasks for any node who is assigned to do a task. For an instance, my docker role gets both nodes to install docker and perform the neccessary actions. The master role tells my manager node to set up a docker swarm and export the token, and the worker role tells my worker to join the swarm with the token.
 
-![Project Image](project-image-url)
+![Ansible](project-image-url)
 
 
 ---
@@ -201,7 +201,7 @@ NGINX is a open source software for web serving, reverse proxying, caching and l
 
 On GCP, I had to create a NGINX VM on GCP and create a nginx.conf. In this VM, I also had to install docker and use the docker run as a NGINX container. NGINX for this project acts as a load balancer and evenly distributes traffic between the manager and worker node.
 
-![Project Image](project-image-url)
+![NGINX](project-image-url)
 
 
 
@@ -216,7 +216,7 @@ On GCP, I had to create a NGINX VM on GCP and create a nginx.conf. In this VM, I
 ## Webhook
 Webhook is used to perform a rolling update. In order to set up this, I had to set it on Jenkins and then on GitHub by using the jenkins ip.
 
-![Project Image](project-image-url)
+![Webhook](project-image-url)
 
 Now that everything is set up, I am able to push anytime to the repository, This is because Jenkins automatically builds and deploys the new version.
 
