@@ -1,7 +1,5 @@
 # Project 2: Scratchcard generator
 
-![Project Image](project-image-url)
-
 > QA DevOps Practical Project
 
 ---
@@ -54,7 +52,6 @@ For this project, I should have:
 - Orchestration Tool: Docker Swarm
 - Reverse Proxy: NGINX
 
-[Back To The Top](#scratchcard-generator)
 
 ---
 
@@ -65,7 +62,6 @@ I have decided to make a scratchcard prize generator web application. The applic
 - Use Service2 & Service3 to generate a random number-letter combination; Service2 involves generating number and Service3 involves generating letter
 - Use Service4 to generate a prize reward.
 
-[Back To The Top](#scratchcard-generator)
 
 ---
 
@@ -84,36 +80,36 @@ On the "jenkins" Virtual Machine, I placed the generated public key from jenkin 
 
  Still as the jenkins user, I put the docker login to provide my dockerhub username and password. After providing those credentials, through the jenkins app on port 8080, I installed a webhook for my git repository and enabled it on git, this allows for a rolling update.
 
-[Back To The Top](#scratchcard-generator)
+
 
 ---
 ## ERD
 
+![ERD](C:\Users\Thinesh\Scratch card project\Documentations\erd.png)
 
-[Back To The Top](#scratchcard-generator)
 
 ---
 ## Jira
 
-[Back To The Top](#scratchcard-generator)
+![Project Image](project-image-url)
 
 ---
 ## Risk Assessment
 
 
-[Back To The Top](#scratchcard-generator)
+![Project Image](project-image-url)
 
 ---
 ## Service Infrastructure
 
+![Project Image](project-image-url)
 
-[Back To The Top](#scratchcard-generator)
 
 ---
 ## CI Pipeline
 
+![Project Image](project-image-url)
 
-[Back To The Top](#scratchcard-generator)
 
 ---
 ## Google Cloud Platform
@@ -123,7 +119,7 @@ In order for me to connect my application to the VM, I had to place my local mac
 
 Once all my services are completed and the application is working successfully, I had to push to GitHub main branch. After the completion, I created 3 VMs for the next stage which are jenkins, manager and worker.
 
-[Back To The Top](#scratchcard-generator)
+
 
 ---
 ## Jenkins Build
@@ -149,8 +145,6 @@ For this project, I had to execute scripts in my steps as it is easy to implemen
 
 
 
-[Back To The Top](#scratchcard-generator)
-
 ---
 ## Testing
 
@@ -161,7 +155,6 @@ Here is the picture of the pytest.
 ![Project Image](project-image-url)
 
 
-[Back To The Top](#scratchcard-generator)
 
 ---
 ## Ansible
@@ -184,8 +177,6 @@ In this file, I had to specify the tasks for any node who is assigned to do a ta
 ![Project Image](project-image-url)
 
 
-[Back To The Top](#scratchcard-generator)
-
 ---
 ## Docker & Docker Compose for services
 Docker is a container management software so you have containers, images and volumes. The benefits using this software is its simplicity,collaboration,flexibility and totality.
@@ -195,8 +186,6 @@ So in order to use this software, I had to make Dockerfiles for each service in 
 After making dockerfiles, we need to make a docker-compose.yaml which makes the use of configuration files to build all of the containers at once. It builds and deploys them as 1 service. 
 
 
-[Back To The Top](#scratchcard-generator)
-
 ---
 ## Docker Swarm
 Docker Swarm allows the user to manage multiple containers deployed across multiple host machines.
@@ -205,8 +194,6 @@ For this project, I had to SSH into my swarm manager using "StrictHostKeyCheckin
 
 After doing this, I had to docker stack across the swarm using docker-compose.yaml and giving my stack the name randprize
 
-
-[Back To The Top](#scratchcard-generator)
 
 ---
 ## NGINX
@@ -218,12 +205,12 @@ On GCP, I had to create a NGINX VM on GCP and create a nginx.conf. In this VM, I
 
 
 
-[Back To The Top](#scratchcard-generator)
+
 
 ---
 ## Demonstration
 
-[Back To The Top](#scratchcard-generator)
+
 
 ---
 ## Webhook
@@ -233,10 +220,9 @@ Webhook is used to perform a rolling update. In order to set up this, I had to s
 
 Now that everything is set up, I am able to push anytime to the repository, This is because Jenkins automatically builds and deploys the new version.
 
-[Back To The Top](#scratchcard-generator)
+
 
 ---
 ## Branch
 
 
-[Back To The Top](#scratchcard-generator)
