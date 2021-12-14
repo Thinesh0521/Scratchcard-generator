@@ -125,7 +125,7 @@ Once all my services are completed and the application is working successfully, 
 ## Jenkins Build
 
 #### Permissions
-The next stage is to create a jenkins GCP virtual machine. After creating this, I had to first install and unlock Jenkins. Once these steps are done, I used the command: "sudo visudo" in the jenkins VM to add jenkins to be a sudo user. 
+The next stage is to create a jenkins GCP virtual machine. After creating this, I had to first install and unlock Jenkins. Once these steps are done, I used the command: "sudo visudo" with the code "jenkins (ALL)=(ALL) NOPASSWD: ALL" in the jenkins VM to add jenkins to be a sudo user. 
 
 #### Docker & Docker-compose
 As the jenkins user, I had to install docker and docker-compose adding the jenkin user to the docker user group. This allows jenkins to use docker without sudo commands and then restarted the terminal.
