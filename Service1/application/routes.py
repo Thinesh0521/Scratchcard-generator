@@ -12,7 +12,7 @@ def home():
     return render_template('index.html',title='home', code=code)
 
 # The route that generates reward based on the generated numbers and letters
-@app.route('/scratchprize/<code>', methods=['GET', 'POST'])
+@app.route('/prize/<code>', methods=['GET', 'POST'])
 def prize(code):
     winning = requests.post('http://Service4:5003/prize1', data=code)
     prizes = prizedb(code=code, reward=winning.text)    
@@ -20,7 +20,7 @@ def prize(code):
     db.session.commit()
     return render_template('scratchprize.html', title='prize', code=code, winning=winning.text)
 
-#@app.route('/scratchprize/<code>', methods=['GET', 'POST'])
+#@app.route('/prize/<code>', methods=['GET', 'POST'])
 #def prize(code):
 #    winning = requests.post('http://Service4:5003/prize2', data=code)
 #    prizes = prizedb(code=code, reward=winning.text)    
