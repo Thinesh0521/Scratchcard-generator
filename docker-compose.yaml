@@ -1,0 +1,39 @@
+version: '3.7'
+services:
+  Service1:
+    image: thinesh55/Service1:latest
+    build: ./Service1 
+    ports:
+    - target: 5000
+      published: 5000
+      protocol: tcp
+    deploy:
+      replicas: 1
+    depends_on:
+      - database  
+  Service2:
+    image: thinesh55/Service2:latest      
+    build: ./Service2
+    ports:
+    - target: 5001
+      protocol: tcp
+    deploy:
+      replicas: 1
+  Service3:    
+    image: thinesh55/Service3:latest
+    build: ./Service3 
+    ports:
+    - target: 5002
+      protocol: tcp
+    deploy:
+      replicas: 1  
+  Service4:
+    image: thinesh55/Service4:latest
+    build: ./Service4
+    ports:
+    - target: 5003
+      protocol: tcp
+    deploy:
+      replicas: 1
+  database:
+     
