@@ -206,25 +206,16 @@ On GCP, I had to create a NGINX VM on GCP and create a nginx.conf. In this VM, I
 ![Nginx](https://user-images.githubusercontent.com/93920209/145829862-9d31156c-1bbe-43f3-ac9a-1ff2789da3af.png)
 
 
-
-
-
----
-## Demonstration
-
-
-
 ---
 ## Webhook
 Webhook is used to perform a rolling update. In order to set up this, I had to set it on Jenkins and then on GitHub by using the jenkins ip.
-
-![Webhook](project-image-url)
 
 Now that everything is set up, I am able to push anytime to the repository, This is because Jenkins automatically builds and deploys the new version.
 
 
 
 ---
-## Branch
+## Conclusion
+
 
 
