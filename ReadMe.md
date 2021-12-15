@@ -141,22 +141,12 @@ As soon as I got the public key, I made 2 GCP VMs which are a manager and a work
 #### Jenkins Pipeline
 After setting previous stages up, I had to make a Jenkins pipeline in order for jenkins to read. This can be done by creating a Jenkinsfile. The pipeline has a number of benefits and in this project, the main benefit is that it has made the process code easier for iterative development with other features such as code review and access control. The Jenkinsfile defines stages and we can give the steps for each stage. 
 
-For this project, I had to execute scripts in my steps as it is easy to implement. Here is a picture of my jenkins pipeline:
-
-![Jenkins Pipeline](project-image-url)
-
-
+For this project, I had to execute scripts in my steps as it is easy to implement.
 
 ---
 ## Testing
 
 Testing is the first stage of a deployment and I had to pytest each service by using --cov ./application after making a venv and installing pytest.
-
-Here is the picture of the pytest.
-
-![Testing](project-image-url)
-
-
 
 ---
 ## Ansible
