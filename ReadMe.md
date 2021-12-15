@@ -204,7 +204,9 @@ push anytime to the repository and this is because Jenkins automatically builds 
 
 ---
 ## Conclusion
-I found this deployment project enjoyable and exciting but unfortunately due to serious situation I am facing, I was unable to work to my best ability. There were some practical works that were not working due to the errors that were facing and did not have time to solve the issues. 
-But on the other hand, I learnt a lot from theoritically aspects of the deployment and how it works. If I was in a better condition, I would have the chance to look through this project once more time with the help of my teachers, friends and expertises.
+I found this deployment project enjoyable and exciting but unfortunately due to serious situation I am facing, I was unable to work to my best ability. There were some practical works that were not working due to the errors that I was facing and did not have time to solve the issues. 
+
+But on the other hand, I learnt a lot from theoritically aspects of the deployment and how it works. The videos of the teachers in QA helped me alot understand the deployment of a project. 
+If I was in a better condition, I would have the chance to look through this project once more time with the help of my teachers, friends and expertises.
 
 
