@@ -1,0 +1,17 @@
+- name: clone git 
+  git:
+    repo: https://github.com/Thinesh0521/Scratchcard-generator.git
+    dest: /home/Scratchcard-generator
+    update: yes
+
+- name: "make the swarm"
+  docker_swarm:
+    state: present
+- name: "Get swarm info"
+  docker_swarm_info:
+  register: swarm_info
+
+- name: "Get a join token"
+  add_host:
+    name: "join_token"
+    value: "{{ swarm_info['swarm_facts']['JoinTokens']['Worker'] }}"
