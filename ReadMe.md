@@ -21,9 +21,8 @@
 - [Docker & Docker Compose for services](#docker-&-docker-compose-for-services)
 - [Docker Swarm](#docker-swarm)
 - [NGINX](#nginx)
-- [Demonstration](#demonstration)
 - [Webhook](#webhook)
-- [Branch](#branch)
+
 
 
 ---
@@ -91,7 +90,7 @@ On the "jenkins" Virtual Machine, I placed the generated public key from jenkin 
 ---
 ## Jira
 
-![Jira](project-image-url)
+![Jira](https://user-images.githubusercontent.com/93920209/146107564-478d7d2f-8bfa-455c-9969-6172eea2d87e.png)
 
 ---
 ## Risk Assessment
@@ -175,7 +174,7 @@ Docker is a container management software so you have containers, images and vol
 
 So in order to use this software, I had to make Dockerfiles for each service in order to build images of them. This exposes Services1, Service2, Service3 & Service4 to their ports respectively(5000,5001,5002 &5003).
 
-After making dockerfiles, we need to make a docker-compose.yaml which makes the use of configuration files to build all of the containers at once. It builds and deploys them as 1 service. 
+After making dockerfiles, we need to make a docker-compose.yaml which makes the use of configuration files to build all of the containers at once. It builds and deploys them as one whole service. 
 
 
 ---
@@ -198,9 +197,8 @@ On GCP, I had to create a NGINX VM on GCP and create a nginx.conf. In this VM, I
 
 ---
 ## Webhook
-Webhook is used to perform a rolling update. In order to set up this, I had to set it on Jenkins and then on GitHub by using the jenkins ip.
-
-Now that everything is set up, I am able to push anytime to the repository, This is because Jenkins automatically builds and deploys the new version.
+Webhook is used to perform a rolling update. In order to set up this, I had to set it on Jenkins and then on GitHub by using the jenkins ip. This would enable us to 
+push anytime to the repository and this is because Jenkins automatically builds and deploys the new version.
 
 
 
