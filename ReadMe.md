@@ -66,7 +66,7 @@ I have decided to make a scratchcard prize generator web application. The applic
 
 ## Summary
 
-Once the web application was made and tested in a virual machine , I added a Dockerfile into each of the services to containerise them and made a docker-compose.yaml. Then I made ansible files that involves Inventory, playbook.yaml and roles/tasks. These files can help install docker on the swarm nodes and then set up a docker swarm. After setting these up, I then created a Jenkinsfile with scripts so that jenkin can use these requirements to make a pipeline.
+Once the web application was made and tested in a virual machine , I should have created a Dockerfile into each of the services to containerise them and made a docker-compose.yaml. Then I made ansible files that involves Inventory, playbook.yaml and roles/tasks. These files can help install docker on the swarm nodes and then set up a docker swarm. After setting these up, I then created a Jenkinsfile with scripts so that jenkin can use these requirements to make a pipeline.
 
 I need 3 new Virtual Machines in Google Cloud Platform and these are:
 - jenkins
@@ -77,7 +77,7 @@ Firstly, I started off by installing Jenkins on the "jenkins" Virtual Machine. A
 
 On the "jenkins" Virtual Machine, I placed the generated public key from jenkin user into the manager and worker VMs. Once I have created those two virtual machines ("manager" & "worker"), I used the "jenkins" virtual machine to "ssh" into them.
 
- Still as the jenkins user, I put the docker login to provide my dockerhub username and password. After providing those credentials, through the jenkins app on port 8080, I installed a webhook for my git repository and enabled it on git, this allows for a rolling update.
+ Still as the jenkins user, I put the docker login to provide my dockerhub username and password. After providing those credentials, through the jenkins app on port 8080, I should be able to install a webhook for my git repository and enable it on git, this allows for a rolling update.
 
 
 
